@@ -1,20 +1,5 @@
-# Exphormers: Sparse Transformers for Graphs
 
-
-[![arXiv](https://img.shields.io/badge/arXiv-2303.06147-b31b1b.svg)](https://arxiv.org/abs/2303.06147)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/graph-classification-on-cifar10-100k)](https://paperswithcode.com/sota/graph-classification-on-cifar10-100k?p=exphormer-sparse-transformers-for-graphs)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/node-classification-on-coco-sp)](https://paperswithcode.com/sota/node-classification-on-coco-sp?p=exphormer-sparse-transformers-for-graphs)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/graph-classification-on-malnet-tiny)](https://paperswithcode.com/sota/graph-classification-on-malnet-tiny?p=exphormer-sparse-transformers-for-graphs)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/graph-classification-on-mnist)](https://paperswithcode.com/sota/graph-classification-on-mnist?p=exphormer-sparse-transformers-for-graphs)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/node-classification-on-pascalvoc-sp-1)](https://paperswithcode.com/sota/node-classification-on-pascalvoc-sp-1?p=exphormer-sparse-transformers-for-graphs)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exphormer-sparse-transformers-for-graphs/link-prediction-on-pcqm-contact)](https://paperswithcode.com/sota/link-prediction-on-pcqm-contact?p=exphormer-sparse-transformers-for-graphs)
-
-
-
-![Exphormer-viz](./Exphormers.png)
-
-
-In this work we introduce new sparse transformers for graph data, and use them in the [GraphGPS](https://github.com/rampasek/GraphGPS) framework. Our sparse transformers outperform BigBird and Performer in all cases we tried, which have been mainly designed for the natural language processing context; in many cases, we even get better results than full (dense attention) transformers. Our sparse transformer has three components: actual edges, expander graphs, and universal connectors or virtual nodes. We combine these components into a single sparse attention mechanism.
+In this work we introduce new sparse dynamic transformers for graph data, and use them in the [GraphGPS](https://github.com/rampasek/GraphGPS) framework. Our sparse transformer has three components: actual edges, expander graphs, and universal connectors or virtual nodes. We combine these components into a single sparse attention mechanism.
 
 
 ### Python environment setup with Conda
@@ -39,7 +24,7 @@ conda clean --all
 ```
 
 
-### Running Exphormer
+### Running 
 ```bash
 conda activate exphormer
 
@@ -69,15 +54,3 @@ prep:
     # otherwise set the number of virtual nodes you want to use.
 ```
 
-## Citation
-
-Our work can be cited using the following bibtex:
-```bibtex
-@inproceedings{shirzad2023exphormer,
-  title={Exphormer: Sparse transformers for graphs},
-  author={Shirzad, Hamed and Velingker, Ameya and Venkatachalam, Balaji and Sutherland, Danica J and Sinop, Ali Kemal},
-  booktitle={International Conference on Machine Learning},
-  eprinttype={arXiv}, eprint={2303.06147},
-  year={2023}
-}
-```
